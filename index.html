@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Interactive pricing component</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center;}
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+  <link rel="stylesheet" href="css/css.css">
+</head>
+<body >
+	<h2>Simple, traffic-based pricing<br><span>Sign-up for our 30-day trial. No credit card required.</span></h2>
+	<article class="card">
+		<section class="card_top">
+				<h3 class="page_view">100K Pageviews</h3>
+				<div class="ofert"><span class="price_cont">$ <output id="price" class="price">16</output>.00</span> /month</div>
+				<input class="range" type="range"   oninput="price.value=this.value" value="16" min="0" max="32"  >
+				<div class="billing">Monthly Billing <span class="switch_cont"><label class="switch"><input type="checkbox"><span class="slider"></span></label></span> Yearly Billing <span class="discount">25% <span class="appear">discount</span></span></div>
+		</section>
+		<section class="card_bottom">
+			<div class="feature_cont">
+				<h3 class="feature"><span class="check_icon"><img src="images/icon-check.svg" alt="ERR"></span> Unlimited websites</h3>
+				<h3 class="feature"><span class="check_icon"><img src="images/icon-check.svg" alt="ERR"></span> 100% data ownership</h3>
+				<h3 class="feature"><span class="check_icon"><img src="images/icon-check.svg" alt="ERR"></span> Email reports</h3>
+			</div>
+			
+			<button class="btn">Start my trial</button>
+		</section>
+	</article>
+<br> 
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Iwanna</a>.
+  </div>
+
+</body>
+</html>
